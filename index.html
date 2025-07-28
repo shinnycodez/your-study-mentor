@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Study mentor - Academic Excellence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            maroon: '#8A1538',
+            'maroon-dark': '#6B102C',
+            'maroon-light': '#B33C5B',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #8A1538; /* Maroon scrollbar */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6B102C; /* Darker maroon on hover */
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <header class="sticky top-0 bg-white shadow z-50 py-4 px-6 flex justify-between items-center">
+    <a href="/" class="text-2xl font-bold text-maroon">Your Study mentor </a>
+    <nav class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-maroon">Home</a>
+      <a href="about-us.html" class="hover:text-maroon">About Us</a>
+      <a href="middle-east.html" class="hover:text-maroon">Middle east</a>
+      <a href="tnc.html" class="hover:text-maroon">Terms & Conditions</a>
+    </nav>
+    <div class="md:hidden">
+      <button id="mobile-toggle" class="text-xl text-maroon">
+        <i id="mobile-toggle-icon" class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6">
+    <!-- The close button is now handled by the mobile-toggle in the header -->
+    <a href="index.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Home</a>
+    <a href="about-us.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">About Us</a>
+    <a href="middle-east.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Middle East</a>
+    <a href="tnc.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Terms & Conditions</a>
+  </div>
+
+  <section id="home" class="relative bg-gradient-to-r from-maroon to-maroon-light text-white py-24 px-4 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold fade-in">Academic Excellence Starts Here</h1>
+    <p class="text-xl mt-4 fade-in" id="typed-text"></p>
+    <a href="#cta-section" class="mt-6 inline-block bg-white text-maroon px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Book Free Trial</a>
+  </section>
+
+  <section id="online-tutoring" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-maroon mb-10">Our Online Tutoring</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
+            <i class="fas fa-laptop-code text-5xl text-maroon mb-4"></i>
+            <h3 class="text-xl font-semibold">Interactive Classrooms</h3>
+            <p>Real-time collaboration with the latest ed-tech tools.</p>
+          </div>
+          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
+            <i class="fas fa-pencil-alt text-5xl text-maroon mb-4"></i>
+            <h3 class="text-xl font-semibold">Weekly Homework</h3>
+            <p>Track progress through assessments and tasks.</p>
+          </div>
+          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
+            <i class="fas fa-chart-line text-5xl text-maroon mb-4"></i>
+            <h3 class="text-xl font-semibold">Progress Reports</h3>
+            <p>Detailed monthly feedback for parents.</p>
+          </div>
+          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
+            <i class="fas fa-star text-5xl text-maroon mb-4"></i>
+            <h3 class="text-xl font-semibold">Free Trial & Assessment</h3>
+            <p>Try before you commit. No obligations.</p>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-maroon mb-6">Our Pricing</h2>
+      <p class="text-2xl font-semibold text-maroon">
+        <i class="fas fa-pound-sign"></i> Home tutoring: £25–£30 per hour <br />
+        <span class="text-sm">(depending on grade level)</span>
+      </p>
+    </div>
+  </section>
+
+  <section id="home-tutoring" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-maroon mb-10">Our Home Tutoring</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg shadow text-center">
+          <i class="fas fa-house-user text-5xl text-maroon mb-4"></i>
+          <h3 class="text-xl font-semibold">One-on-One Teaching</h3>
+          <p>Comfort of home with personal attention.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow text-center">
+          <i class="fas fa-chalkboard-teacher text-5xl text-maroon mb-4"></i>
+          <h3 class="text-xl font-semibold">Expert Tutors</h3>
+          <p>UK-qualified professionals across all subjects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta-section" class="bg-maroon text-white py-16 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Book your free trial lesson today!</h2>
+    <a href="#" class="inline-block bg-white text-maroon px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Get Started</a>
+  </section>
+
+  <footer class="bg-maroon-dark text-white py-8 text-center">
+    <p>&copy; Your Study mentor . All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    new Swiper(".mySwiper", {
+      loop: true,
+      grabCursor: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      }
+    });
+
+    new Typed("#typed-text", {
+      strings: [
+        "UK Tutors Teaching Across the Middle East.",
+        "All Subjects for Year 1 to A-Levels.",
+        "Innovative Learning Delivered to You."
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 2000,
+      loop: true
+    });
+
+    // Mobile menu toggle functions
+    const openMobileMenu = () => {
+      document.getElementById('mobile-menu').classList.remove('hidden');
+      document.getElementById('mobile-toggle-icon').classList.remove('fa-bars');
+      document.getElementById('mobile-toggle-icon').classList.add('fa-times');
+    };
+
+    const closeMobileMenu = () => {
+      document.getElementById('mobile-menu').classList.add('hidden');
+      document.getElementById('mobile-toggle-icon').classList.remove('fa-times');
+      document.getElementById('mobile-toggle-icon').classList.add('fa-bars');
+    };
+
+    // Event listeners for mobile menu buttons
+    document.getElementById('mobile-toggle').addEventListener('click', () => {
+      if (document.getElementById('mobile-menu').classList.contains('hidden')) {
+        openMobileMenu();
+      } else {
+        closeMobileMenu();
+      }
+    });
+
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+  </script>
+</body>
+</html>
