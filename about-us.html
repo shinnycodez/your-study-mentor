@@ -48,7 +48,6 @@
 </head>
 <body class="bg-white text-gray-800">
 
-  <!-- Header -->
   <header class="sticky top-0 bg-white shadow z-50 py-4 px-6 flex justify-between items-center">
     <a href="/" class="text-2xl font-bold text-maroon">Your Study mentor </a>
     <nav class="hidden md:flex space-x-6">
@@ -64,7 +63,6 @@
     </div>
   </header>
 
-  <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6">
     <button id="close-mobile" class="absolute top-4 right-6 text-3xl text-maroon">
       <i class="fas fa-times"></i>
@@ -75,16 +73,14 @@
     <a href="tnc.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Terms and conditions</a>
   </div>
 
-  <!-- Hero Section -->
   <section class="bg-gradient-to-r from-maroon via-maroon-light to-maroon-dark py-24 px-6 text-white text-center relative overflow-hidden">
     <img src="https://cdn.pixabay.com/photo/2016/03/26/13/09/books-1281581_960_720.jpg" alt="Books" class="absolute opacity-20 top-0 left-0 w-full h-full object-cover z-0">
     <div class="relative z-10 max-w-3xl mx-auto" data-aos="fade-down">
       <h2 class="text-5xl font-bold mb-4">Who We Are</h2>
-      <p class="text-xl max-w-2xl mx-auto">Your Study mentor  is a UK-registered tutoring company with over 7 years of experience helping students reach their full potential.</p>
+      <p class="text-xl max-w-2xl mx-auto">Your Study mentor is a UK-registered tutoring company with over 7 years of experience helping students reach their full potential.</p>
     </div>
   </section>
 
-  <!-- Mission Section -->
   <section class="py-20 px-6 bg-white">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10" data-aos="fade-up">
       <img src="https://i.pinimg.com/1200x/cf/66/33/cf66334166ddd4c120148dc07c492449.jpg" class="rounded-xl shadow-lg" alt="Online Tutoring">
@@ -95,7 +91,6 @@
     </div>
   </section>
 
-  <!-- Values Section -->
   <section class="bg-maroon-light py-20 px-6 text-white">
     <div class="max-w-6xl mx-auto text-center" data-aos="zoom-in">
       <h3 class="text-4xl font-bold mb-10">Our Core Values</h3>
@@ -120,7 +115,6 @@
     </div>
   </section>
 
-  <!-- Trusted Section -->
   <section class="bg-gray-50 py-20 px-6">
     <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
       <i class="fas fa-globe text-maroon text-4xl mb-4"></i>
@@ -129,21 +123,39 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="contact" class="bg-maroon text-white py-16 md:py-20 text-center rounded-t-lg">
-    <div class="container mx-auto px-4" data-aos="fade-up">
-      <h2 class="text-4xl font-bold mb-6">Ready to start your academic journey?</h2>
-      <a href="#" class="inline-block bg-white text-maroon font-semibold py-3 px-10 rounded-full shadow-lg text-lg hover:bg-gray-100 hover:scale-105 transition">Contact Us</a>
+  ---
+
+  <section id="call-us" class="bg-gray-100 py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <i class="fas fa-phone-alt text-maroon text-4xl mb-4"></i>
+      <h3 class="text-3xl font-semibold text-maroon mb-4">Have Questions? Give Us a Call!</h3>
+      <p class="text-4xl font-bold text-maroon mb-6">
+        <a href="tel:+441234567890" class="hover:underline">07585 885354</a>
+      </p>
+      <p class="text-lg text-gray-700">Our team is ready to assist you with any inquiries.</p>
     </div>
   </section>
 
-  <!-- Footer -->
+  ---
+
+  <section id="contact" class="bg-maroon text-white py-16 md:py-20 text-center rounded-t-lg">
+    <div class="container mx-auto px-4" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-6">Ready to start your academic journey?</h2>
+      <a href="https://wa.link/e45ij5" class="inline-block bg-white text-maroon font-semibold py-3 px-10 rounded-full shadow-lg text-lg hover:bg-gray-100 hover:scale-105 transition">Contact Us</a>
+    </div>
+  </section>
+
   <footer class="bg-maroon-dark text-white py-8 text-center">
-    <p>&copy; 2025 >Your Study mentor . All rights reserved.</p>
+    <p>&copy; 2025 Your Study mentor . All rights reserved.</p>
     <p class="mt-2">Designed with <i class="fas fa-heart text-maroon-light"></i> for academic success.</p>
   </footer>
 
-  <!-- Scripts -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.link/e45ij5" target="_blank" class="bg-green-500 text-white p-4 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
+      <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ once: true, duration: 800 });
