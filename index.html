@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Study mentor – Your Partner in Academic Excellence</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Your Study mentor </title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -13,20 +13,24 @@
             maroon: '#8A1538',
             'maroon-dark': '#6B102C',
             'maroon-light': '#B33C5B',
-          }
-        }
-      }
+          },
+        },
+      },
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Inter', sans-serif;
+      color: #333; /* Default text color for general content */
     }
     ::-webkit-scrollbar {
       width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
     }
     ::-webkit-scrollbar-thumb {
       background: #8A1538; /* Maroon scrollbar */
@@ -35,120 +39,115 @@
     ::-webkit-scrollbar-thumb:hover {
       background: #6B102C; /* Darker maroon on hover */
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .fade-in {
-      animation: fadeIn 1s ease-in-out forwards;
-    }
+    .animate-fade-in-down { animation: fadeInDown 1s ease-out forwards; }
   </style>
 </head>
 <body class="bg-white text-gray-800">
+
   <header class="sticky top-0 bg-white shadow z-50 py-4 px-6 flex justify-between items-center">
-    <a href="/" class="text-2xl font-bold text-maroon">Your Study mentor</a>
+    <a href="/" class="text-2xl font-bold text-maroon">Your Study mentor </a>
     <nav class="hidden md:flex space-x-6">
-      <a href="index.html" class="hover:text-maroon">Home</a>
-          <a href="middle-east.html" class="hover:text-maroon">Middle east</a>
-      <a href="about-us.html" class="hover:text-maroon">About Us</a>
-      <a href="tnc.html" class="hover:text-maroon">Terms & Conditions</a>
+      <a href="/index.html" class="hover:text-maroon">Home</a>
+       <a href="middle-east.html" class="hover:text-maroon">Middle East</a>
+      <a href="about-us.html" class="underline text-maroon">About Us</a>
+      <a href="tnc.html" class="hover:text-maroon">Terms and Conditions</a>
     </nav>
     <div class="md:hidden">
       <button id="mobile-toggle" class="text-xl text-maroon">
-        <i id="mobile-toggle-icon" class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
       </button>
     </div>
   </header>
 
   <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6">
+    <button id="close-mobile" class="absolute top-4 right-6 text-3xl text-maroon">
+      <i class="fas fa-times"></i>
+    </button>
     <a href="index.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Home</a>
-      <a href="middle-east.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Middle East</a>
-    <a href="about-us.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">About Us</a>
-    <a href="tnc.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Terms & Conditions</a>
+     <a href="middle-east.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Middle east</a>
+    <a href="about-us.html" class="text-2xl underline text-maroon hover:text-maroon-dark" onclick="closeMobileMenu()">About Us</a>
+    <a href="tnc.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Terms and conditions</a>
   </div>
 
-  <section id="home" class="relative bg-gradient-to-r from-maroon to-maroon-light text-white py-24 px-4 text-center">
-    <h1 class="text-4xl md:text-6xl font-bold fade-in">Welcome to Your Study mentor – Your Partner in Academic Excellence</h1>
-    <p class="text-xl mt-4 fade-in" id="typed-text"></p>
-    <a href="https://wa.link/e45ij5" class="mt-6 inline-block bg-white text-maroon px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Book Free Trial</a>
+  <section class="bg-gradient-to-r from-maroon via-maroon-light to-maroon-dark py-24 px-6 text-white text-center relative overflow-hidden">
+    <img src="https://cdn.pixabay.com/photo/2016/03/26/13/09/books-1281581_960_720.jpg" alt="Books" class="absolute opacity-20 top-0 left-0 w-full h-full object-cover z-0">
+    <div class="relative z-10 max-w-3xl mx-auto" data-aos="fade-down">
+      <h2 class="text-5xl font-bold mb-4">Who We Are</h2>
+      <p class="text-xl max-w-2xl mx-auto">Your Study mentor is a UK-based tutoring company with over 7 years of experience helping students reach their full potential.</p>
+    </div>
   </section>
 
-  <section id="online-tutoring" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-maroon mb-10">Our Online Tutoring</h2>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
-            <i class="fas fa-laptop-code text-5xl text-maroon mb-4"></i>
-            <h3 class="text-xl font-semibold">Interactive Virtual Classrooms</h3>
-            <p>We use the latest technology to make our sessions feel like a real classroom.</p>
-          </div>
-          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
-            <i class="fas fa-pencil-alt text-5xl text-maroon mb-4"></i>
-            <h3 class="text-xl font-semibold">Weekly Homework & Quizzes</h3>
-            <p>Reinforcing concepts and tracking progress.</p>
-          </div>
-          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
-            <i class="fas fa-chart-line text-5xl text-maroon mb-4"></i>
-            <h3 class="text-xl font-semibold">Regular Progress Updates</h3>
-            <p>Parents receive detailed updates about their child’s performance.</p>
-          </div>
-          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
-            <i class="fas fa-star text-5xl text-maroon mb-4"></i>
-            <h3 class="text-xl font-semibold">Free Trial & Assessment</h3>
-            <p>Experience our teaching style with a free trial session, followed by a comprehensive assessment.</p>
-          </div>
-        </div>
-        <div class="swiper-pagination mt-4"></div>
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10" data-aos="fade-up">
+      <img src="https://i.pinimg.com/1200x/cf/66/33/cf66334166ddd4c120148dc07c492449.jpg" class="rounded-xl shadow-lg" alt="Online Tutoring">
+      <div>
+        <h3 class="text-4xl font-semibold text-maroon mb-4">Our Mission</h3>
+        <p class="text-lg text-gray-700">We strive to make high-quality education accessible — from home tutoring to online classes. With 24/7 tutor availability, personalized learning becomes a reality.</p>
       </div>
     </div>
   </section>
 
-  <section id="pricing" class="py-16 md:py-24 bg-gray-50">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-maroon mb-6">Pricing:</h2>
-      <p class="text-2xl font-semibold text-maroon">
-        <i class="fas fa-pound-sign"></i> Online tutoring: £15–£17 per hour <br />
-        <span class="text-sm">(depending on grade level)</span>
-      </p>
-    </div>
-  </section>
-
-  <section id="home-tutoring" class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-maroon mb-10">Our Home Tutoring</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-gray-50 p-6 rounded-lg shadow text-center">
-          <i class="fas fa-house-user text-5xl text-maroon mb-4"></i>
-          <h3 class="text-xl font-semibold">Personalized One-to-One Teaching</h3>
-          <p>Our experienced tutors come to your home, ensuring comfort and focused learning.</p>
+  <section class="bg-maroon-light py-20 px-6 text-white">
+    <div class="max-w-6xl mx-auto text-center" data-aos="zoom-in">
+      <h3 class="text-4xl font-bold mb-10">Our Core Values</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="bg-white text-maroon-dark p-6 rounded-xl shadow-md hover:scale-105 transition-all">
+          <i class="fas fa-chalkboard-teacher text-3xl text-maroon mb-4"></i>
+          <h4 class="font-semibold text-xl mb-2">Excellence in Teaching</h4>
         </div>
-        <div class="bg-gray-50 p-6 rounded-lg shadow text-center">
-          <i class="fas fa-chalkboard-teacher text-5xl text-maroon mb-4"></i>
-          <h3 class="text-xl font-semibold">Expert UK Tutors</h3>
-          <p>Skilled professionals committed to your child’s success.</p>
+        <div class="bg-white text-maroon-dark p-6 rounded-xl shadow-md hover:scale-105 transition-all">
+          <i class="fas fa-user-graduate text-3xl text-maroon mb-4"></i>
+          <h4 class="font-semibold text-xl mb-2">Student-Centered Approach</h4>
+        </div>
+        <div class="bg-white text-maroon-dark p-6 rounded-xl shadow-md hover:scale-105 transition-all">
+          <i class="fas fa-comments text-3xl text-maroon mb-4"></i>
+          <h4 class="font-semibold text-xl mb-2">24/7 Support & Feedback</h4>
+        </div>
+        <div class="bg-white text-maroon-dark p-6 rounded-xl shadow-md hover:scale-105 transition-all">
+          <i class="fas fa-award text-3xl text-maroon mb-4"></i>
+          <h4 class="font-semibold text-xl mb-2">Proven Results</h4>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="pricing-home-tutoring" class="py-16 md:py-24 bg-gray-50">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-maroon mb-6">Pricing:</h2>
-      <p class="text-2xl font-semibold text-maroon">
-        <i class="fas "></i> Home tutoring: £25–£30 per hour <br />
-        <span class="text-sm">(depending on grade level)</span>
-      </p>
+  <section class="bg-gray-50 py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <i class="fas fa-globe text-maroon text-4xl mb-4"></i>
+      <h3 class="text-3xl font-semibold text-maroon mb-4">Trusted Worldwide</h3>
+      <p class="text-lg text-gray-700">We take pride in the success of our students and the trust of our global clients — from the UK to the Middle East, from Europe to Asia.</p>
     </div>
   </section>
 
-  <section id="cta-section" class="bg-maroon text-white py-16 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6">Book your free trial lesson today and see the difference!</h2>
-    <a href="https://wa.link/e45ij5"" class="inline-block bg-white text-maroon px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Get Started</a>
+  ---
+
+  <section id="call-us" class="bg-gray-100 py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <i class="fas fa-phone-alt text-maroon text-4xl mb-4"></i>
+      <h3 class="text-3xl font-semibold text-maroon mb-4">Have Questions? Give Us a Call!</h3>
+      <p class="text-4xl font-bold text-maroon mb-6">
+        <a href="tel:+441234567890" class="hover:underline">07585 885354</a>
+      </p>
+      <p class="text-lg text-gray-700">Our team is ready to assist you with any inquiries.</p>
+    </div>
+  </section>
+
+  ---
+
+  <section id="contact" class="bg-maroon text-white py-16 md:py-20 text-center rounded-t-lg">
+    <div class="container mx-auto px-4" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-6">Ready to start your academic journey?</h2>
+      <a href="https://wa.link/e45ij5" class="inline-block bg-white text-maroon font-semibold py-3 px-10 rounded-full shadow-lg text-lg hover:bg-gray-100 hover:scale-105 transition">Contact Us</a>
+    </div>
   </section>
 
   <footer class="bg-maroon-dark text-white py-8 text-center">
-    <p>&copy; Your Study mentor. All rights reserved.</p>
+    <p>&copy; 2025 Your Study mentor . All rights reserved.</p>
+    <p class="mt-2">Designed with <i class="fas fa-heart text-maroon-light"></i> for academic success.</p>
   </footer>
 
   <div class="fixed bottom-6 right-6 z-50">
@@ -157,56 +156,22 @@
     </a>
   </div>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    new Swiper(".mySwiper", {
-      loop: true,
-      grabCursor: true,
-      slidesPerView: 1,
-      spaceBetween: 20,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      }
-    });
-
-    new Typed("#typed-text", {
-      strings: [
-        "At Your Study mentor, we provide premium online and home tutoring services across the UK for students from Year 1 up to Year 13 (A-Levels) in all subjects."
-      ],
-      typeSpeed: 30,
-      backSpeed: 0,
-      backDelay: 2000,
-      loop: false,
-      showCursor: false
-    });
+    AOS.init({ once: true, duration: 800 });
 
     // Mobile menu toggle functions
     const openMobileMenu = () => {
       document.getElementById('mobile-menu').classList.remove('hidden');
-      document.getElementById('mobile-toggle-icon').classList.remove('fa-bars');
-      document.getElementById('mobile-toggle-icon').classList.add('fa-times');
     };
 
     const closeMobileMenu = () => {
       document.getElementById('mobile-menu').classList.add('hidden');
-      document.getElementById('mobile-toggle-icon').classList.remove('fa-times');
-      document.getElementById('mobile-toggle-icon').classList.add('fa-bars');
     };
 
     // Event listeners for mobile menu buttons
-    document.getElementById('mobile-toggle').addEventListener('click', () => {
-      if (document.getElementById('mobile-menu').classList.contains('hidden')) {
-        openMobileMenu();
-      } else {
-        closeMobileMenu();
-      }
-    });
+    document.getElementById('mobile-toggle').addEventListener('click', openMobileMenu);
+    document.getElementById('close-mobile').addEventListener('click', closeMobileMenu);
 
     // Close mobile menu when a link is clicked
     document.querySelectorAll('#mobile-menu a').forEach(link => {
