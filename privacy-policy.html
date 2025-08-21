@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Your Study mentor </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            maroon: '#8A1538',
+            'maroon-dark': '#6B102C',
+            'maroon-light': '#B33C5B',
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #333; /* Default text color for general content */
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #8A1538; /* Maroon scrollbar */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6B102C; /* Darker maroon on hover */
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-down { animation: fadeInDown 1s ease-out forwards; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 bg-white shadow z-50 py-4 px-6 flex justify-between items-center">
+    <a href="/" class="text-2xl font-bold text-maroon">Your Study mentor </a>
+    <nav class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-maroon">Home</a>
+      <a href="middle-east.html" class="hover:text-maroon">Middle East</a>
+      <a href="about-us.html" class="hover:text-maroon">About us</a>
+      <a href="tnc.html" class="hover:text-maroon">Terms & Conditions</a>
+      <a href="privacy-policy.html" class="underline text-maroon">Privacy Policy</a>
+    </nav>
+    <div class="md:hidden">
+      <button id="mobile-toggle" class="text-xl text-maroon">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6">
+    <button id="close-mobile" class="absolute top-4 right-6 text-3xl text-maroon">
+      <i class="fas fa-times"></i>
+    </button>
+    <a href="index.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Home</a>
+    <a href="middle-east.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Middle east</a>
+    <a href="about-us.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">About Us</a>
+    <a href="tnc.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Terms and conditions</a>
+    <a href="privacy-policy.html" class="text-2xl underline text-maroon hover:text-maroon-dark" onclick="closeMobileMenu()">Privacy Policy</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-maroon via-maroon-light to-maroon-dark py-24 px-6 text-white text-center relative overflow-hidden">
+    <img src="https://cdn.pixabay.com/photo/2016/03/26/13/09/books-1281581_960_720.jpg" alt="" class="absolute opacity-20 top-0 left-0 w-full h-full object-cover z-0">
+    <div class="relative z-10 max-w-3xl mx-auto" data-aos="fade-down">
+      <h2 class="text-5xl font-bold mb-4">Privacy Policy</h2>
+      <p class="text-xl max-w-2xl mx-auto">This policy explains how we collect, use, and protect your personal information.</p>
+    </div>
+  </section>
+
+  <!-- Privacy Policy Content Section -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-4xl mx-auto space-y-8 text-lg text-gray-700" data-aos="fade-up">
+      <p>This Privacy Policy explains how we collect, use, and protect your personal information when you interact with our advertisements, lead forms, website, or services. It also describes your rights and how you can exercise them.</p>
+      <p>By providing your information and using our services, you consent to the practices described in this Privacy Policy.</p>
+
+      <hr class="border-t-2 border-maroon">
+
+      <!-- Definitions Section -->
+      <div>
+        <h4 class="text-2xl font-semibold text-maroon mb-3">Definitions</h4>
+        <ul class="list-disc ml-6 space-y-2">
+          <li><strong>Company (“we”, “our”, or “us”)</strong> refers to Yourstudymentor.</li>
+          <li><strong>Service</strong> refers to our advertisements, lead forms, website, or application.</li>
+          <li><strong>Personal Data</strong> means any information that can identify you as an individual.</li>
+          <li><strong>Usage Data</strong> means information automatically collected from your device (such as IP address, browser type, or duration of page visit).</li>
+          <li><strong>You</strong> refers to the individual using our Service (e.g., parents or guardians interested in tutoring services).</li>
+        </ul>
+      </div>
+
+      <hr class="border-t-2 border-maroon">
+
+      <!-- Information We Collect Section -->
+      <div>
+        <h4 class="text-2xl font-semibold text-maroon mb-3">Information We Collect</h4>
+        <p>We may collect the following types of information:</p>
+        <ul class="list-disc ml-6 space-y-2 mt-4">
+          <li>Name (first and last)</li>
+          <li>Email address</li>
+          <li>Phone number</li>
+          <li>Child’s grade level, subject preferences, or study requirements (if provided)</li>
+          <li>Location details (city or country)</li>
+          <li>Comments or preferences you share with us</li>
+          <li>Usage Data such as website or ad interaction details</li>
+        </ul>
+        <p class="mt-4">If you fill out our Facebook or Instagram Lead Form, the information you provide through that form will also be collected and processed in accordance with this Privacy Policy.</p>
+        <p>We do not collect sensitive personal data (such as religion, health, financial details, or biometric information) unless explicitly required and with your consent.</p>
+      </div>
+      
+      <hr class="border-t-2 border-maroon">
+
+      <!-- How We Use Your Information Section -->
+      <div>
+        <h4 class="text-2xl font-semibold text-maroon mb-3">How We Use Your Information</h4>
+        <p>We may use your Personal Data for the following purposes:</p>
+        <ul class="list-disc ml-6 space-y-2 mt-4">
+          <li>To contact you about tutoring services you requested or expressed interest in.</li>
+          <li>To provide, maintain, and improve our Service.</li>
+          <li>To communicate with you via email, SMS, or phone regarding your inquiry.</li>
+          <li>To send you updates, promotions, or offers — only if you have opted in (you can opt out anytime).</li>
+          <li>To analyze performance and improve our advertising and services.</li>
+          <li>For legal compliance, security, and fraud prevention.</li>
+        </ul>
+      </div>
+      
+      <hr class="border-t-2 border-maroon">
+
+      <!-- Sharing of Your Information Section -->
+      <div>
+        <h4 class="text-2xl font-semibold text-maroon mb-3">Sharing of Your Information</h4>
+        <p>We may share your information only in the following cases:</p>
+        <ul class="list-disc ml-6 space-y-2 mt-4">
+          <li>With service providers who help us deliver our Service (e.g., hosting, analytics, communication tools).</li>
+          <li>For legal reasons, if required by law or government authorities.</li>
+          <li>With your consent, for any other purpose.</li>
+        </ul>
+        <p class="mt-4">We do not sell your personal data to third parties.</p>
+      </div>
+      
+      <hr class="border-t-2 border-maroon">
+
+      <!-- Data Retention Section -->
+      <div>
+        <h4 class="text-2xl font-semibold text-maroon mb-3">Data Retention</h4>
+        <p>We retain your Personal Data only as long as necessary to fulfill the purposes described in this Privacy Policy or as required by law.</p>
+      </div>
+      
+      <hr class="border-t-2 border-maroon">
+
+      <!-- Your Rights Section -->
+      <div>
+        <h4 class="text-2xl font-semibold text-maroon mb-3">Your Rights</h4>
+        <p>Depending on applicable law, you may have the right to:</p>
+        <ul class="list-disc ml-6 space-y-2 mt-4">
+          <li>Access the personal data we hold about you</li>
+          <li>Request corrections or updates</li>
+          <li>Request deletion of your data</li>
+          <li>Withdraw your consent at any time for marketing communications</li>
+        </ul>
+        <p class="mt-4">To exercise these rights, please contact us at the email below.</p>
+      </div>
+
+      <hr class="border-t-2 border-maroon">
+      
+      <!-- Security Section -->
+      <div>
+        <h4 class="text-2xl font-semibold text-maroon mb-3">Security</h4>
+        <p>We use commercially acceptable safeguards to protect your Personal Data. However, no online system is 100% secure, and we cannot guarantee absolute security.</p>
+      </div>
+
+      <hr class="border-t-2 border-maroon">
+      
+      <!-- Changes to This Policy Section -->
+      <div>
+        <h4 class="text-2xl font-semibold text-maroon mb-3">Changes to This Policy</h4>
+        <p>We may update this Privacy Policy from time to time. The updated version will be posted on this page with a new Last Updated date.</p>
+        <p class="mt-2 text-sm text-gray-500">Last Updated: 19 August 2025</p>
+      </div>
+
+      <hr class="border-t-2 border-maroon">
+
+      <!-- Contact Us Section -->
+      <div>
+        <h4 class="text-2xl font-semibold text-maroon mb-3">Contact Us</h4>
+        <p>If you have any questions or requests regarding this Privacy Policy, you can contact us:</p>
+        <ul class="list-none space-y-2 mt-4">
+          <li><i class="fas fa-envelope text-maroon-dark"></i> <a href="mailto:infoyourstudymentor@gmail.com" class="text-maroon-dark hover:underline">infoyourstudymentor@gmail.com</a></li>
+          <li><i class="fas fa-globe text-maroon-dark"></i> <a href="https://www.yourstudymentor.com" class="text-maroon-dark hover:underline">www.yourstudymentor.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="bg-maroon text-white py-16 md:py-20 text-center rounded-t-lg">
+    <div class="container mx-auto px-4" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-6">Have questions? Contact us today!</h2>
+      <a href="https://wa.link/e45ij5" class="inline-block bg-white text-maroon font-semibold py-3 px-10 rounded-full shadow-lg text-lg hover:bg-gray-100 hover:scale-105 transition">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-maroon-dark text-white py-8 text-center">
+    <p>&copy; 2025 Your Study mentor . All rights reserved.</p>
+    <p class="mt-2">Designed with <i class="fas fa-heart text-maroon-light"></i> for academic success.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800 });
+
+    // Mobile menu toggle functions
+    const openMobileMenu = () => {
+      document.getElementById('mobile-menu').classList.remove('hidden');
+    };
+
+    const closeMobileMenu = () => {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    };
+
+    // Event listeners for mobile menu buttons
+    document.getElementById('mobile-toggle').addEventListener('click', openMobileMenu);
+    document.getElementById('close-mobile').addEventListener('click', closeMobileMenu);
+
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+  </script>
+</body>
+</html>
