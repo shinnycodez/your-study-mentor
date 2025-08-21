@@ -48,15 +48,16 @@
 </head>
 <body class="bg-white text-gray-800">
 
+
   <!-- Header -->
   <header class="sticky top-0 bg-white shadow z-50 py-4 px-6 flex justify-between items-center">
     <a href="/" class="text-2xl font-bold text-maroon">Your Study mentor </a>
     <nav class="hidden md:flex space-x-6">
       <a href="index.html" class="hover:text-maroon">Home</a>
-           <a href="middle-east.html" class="hover:text-maroon">Middle East</a>
+      <a href="middle-east.html" class="hover:text-maroon">Middle East</a>
       <a href="about-us.html" class="hover:text-maroon">About us</a>
-      <a href="tnc.html" class="underline text-maroon">Terms & Conditions</a>
-
+      <a href="tnc.html" class="hover:text-maroon">Terms & Conditions</a>
+      <a href="privacy-policy.html" class="underline text-maroon">Privacy Policy</a>
     </nav>
     <div class="md:hidden">
       <button id="mobile-toggle" class="text-xl text-maroon">
@@ -71,12 +72,12 @@
       <i class="fas fa-times"></i>
     </button>
     <a href="index.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Home</a>
-      <a href="middle-east.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Middle east</a>
-    <a href="about-us.html" class="text-2xl underline text-maroon hover:text-maroon-dark" onclick="closeMobileMenu()">About Us</a>
+    <a href="middle-east.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Middle east</a>
+    <a href="about-us.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">About Us</a>
     <a href="tnc.html" class="text-2xl hover:text-maroon" onclick="closeMobileMenu()">Terms and conditions</a>
+    <a href="privacy-policy.html" class="text-2xl underline text-maroon hover:text-maroon-dark" onclick="closeMobileMenu()">Privacy Policy</a>
   </div>
 
-  <!-- Hero Section -->
   <section class="bg-gradient-to-r from-maroon via-maroon-light to-maroon-dark py-24 px-6 text-white text-center relative overflow-hidden">
     <img src="https://cdn.pixabay.com/photo/2016/03/26/13/09/books-1281581_960_720.jpg" alt="Books" class="absolute opacity-20 top-0 left-0 w-full h-full object-cover z-0">
     <div class="relative z-10 max-w-3xl mx-auto" data-aos="fade-down">
@@ -85,7 +86,6 @@
     </div>
   </section>
 
-  <!-- Terms & Conditions Content Section -->
   <section class="py-20 px-6 bg-white">
     <div class="max-w-4xl mx-auto" data-aos="fade-up">
       <h3 class="text-3xl font-semibold text-maroon mb-8 text-center">Our Service Policies</h3>
@@ -94,46 +94,47 @@
         <div>
           <h4 class="text-2xl font-semibold text-maroon mb-3">1. Lesson Bookings</h4>
           <ul class="list-disc ml-6 space-y-2">
-            <li>Sessions must be booked in advance as a 4-week block with upfront payment.</li>
-            <li>This ensures that your preferred tutor’s slot is secured.</li>
+            <li>Lessons are booked in advance as a 4-week block with upfront payment.</li>
+            <li>This ensures that your preferred tutor’s slot is reserved and not offered to another student.</li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-2xl font-semibold text-maroon mb-3">2. Missed Lessons</h4>
+          <h4 class="text-2xl font-semibold text-maroon mb-3">2. Missed Lessons & Rescheduling</h4>
           <ul class="list-disc ml-6 space-y-2">
-            <li>In case of an emergency, missed lessons may be rescheduled.</li>
-            <li>Frequent cancellations without valid reasons may result in forfeited sessions.</li>
+            <li>In case of emergencies, lessons may be rescheduled at the tutor’s discretion.</li>
+            <li>Frequent cancellations or last-minute changes without valid reasons may result in the session being marked as completed (non-refundable).</li>
           </ul>
         </div>
 
         <div>
           <h4 class="text-2xl font-semibold text-maroon mb-3">3. Refund Policy</h4>
           <ul class="list-disc ml-6 space-y-2">
-            <li>If you are not satisfied with our services, you may request a refund for any unused sessions.</li>
-            <li>Refunds are processed for undelivered sessions only.</li>
+            <li>Refunds are available for unused lessons only.</li>
+            <li>Completed sessions are non-refundable.</li>
+            <li>Refund requests will be processed within a reasonable time frame.</li>
           </ul>
         </div>
 
         <div>
           <h4 class="text-2xl font-semibold text-maroon mb-3">4. Discounts</h4>
           <ul class="list-disc ml-6 space-y-2">
-            <li>Clients booking bulk sessions (large number per month) may request special discounts.</li>
-            <li>Discounts are subject to approval by our management.</li>
+            <li>Clients booking bulk sessions (a higher number of lessons per month) may be eligible for discounts.</li>
+            <li>Discounts are subject to management approval and may vary.</li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-2xl font-semibold text-maroon mb-3">5. Free Trial</h4>
+          <h4 class="text-2xl font-semibold text-maroon mb-3">5. Free Trial Lesson</h4>
           <ul class="list-disc ml-6 space-y-2">
-            <li>Every new student is entitled to one free trial lesson to evaluate our teaching approach.</li>
+            <li>Each new student is entitled to one free trial lesson to experience our teaching approach.</li>
+            <li>After the trial, continued lessons must be booked under our standard 4-week package.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
   <section id="contact" class="bg-maroon text-white py-16 md:py-20 text-center rounded-t-lg">
     <div class="container mx-auto px-4" data-aos="fade-up">
       <h2 class="text-4xl font-bold mb-6">Have questions? Contact us today!</h2>
@@ -141,13 +142,11 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-maroon-dark text-white py-8 text-center">
     <p>&copy; 2025 Your Study mentor . All rights reserved.</p>
     <p class="mt-2">Designed with <i class="fas fa-heart text-maroon-light"></i> for academic success.</p>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ once: true, duration: 800 });
